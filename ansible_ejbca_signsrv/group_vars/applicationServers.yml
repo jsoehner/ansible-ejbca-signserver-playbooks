@@ -2,13 +2,16 @@
 
 # Wildfly version to deploy, SHA256 hash of the Wildfly archive, whether to disable infinispan, & the datasource 
 # configured in Wildfly for EJBCA to access the DB. Can also deploy Wildfly with Galleon.
-wildfly_version: 26.1.3.Final
-wildfly_checksum: sha256:aadd317c62616f6b5735ae92151d06c1f03c46eba448958d982c61f02528ae59 # 26.1.3
+wildfly_version: 33.0.1.Final
+# wildfly_checksum: sha256:aadd317c62616f6b5735ae92151d06c1f03c46eba448958d982c61f02528ae59 # 26.1.3
+wildfly_checksum: sha256:564D3C7FCE9476EA0977DA778C3299FD39B8EC36DE694B4D318C9AA060A14D9F # 33.0.1
 wildfly_standalone_file: standalone-26.xml.datasource.j2
 wildfly_use_galleon: true
-wildfly_galleon_version: 5.2.0
-wildfly_galleon_checksum: sha256:c42420f977ad8f02b173b64698d1151b55696178afe2a25bc36de60b481a147d # 5.2.0
-wildfly_jboss_client_checksum: sha256:354f95d0bd5111b5e086ee4a08e8f081d619da715d9c3776e94d73fda2e6dcda # WF 26.1.3
+wildfly_galleon_version: 6.0.2
+# wildfly_galleon_checksum: sha256:c42420f977ad8f02b173b64698d1151b55696178afe2a25bc36de60b481a147d # 5.2.0
+wildfly_galleon_checksum: sha256:5C78D1FFC41C3E63E2B6DFB0F8B2D3A140CC716B618CDA1E5B7952EDFB214BF6 # 6.0.2
+# wildfly_jboss_client_checksum: sha256:354f95d0bd5111b5e086ee4a08e8f081d619da715d9c3776e94d73fda2e6dcda # WF 26.1.3
+wildfly_jboss_client_checksum: sha256:07CC07B87E22D92F354E330E34AAD3CC90B29534DE9ECC7AADCEBCACCF464EFA # WF 26.1.3
 # Disabling only works on Wildfly 20 or earlier, Wildfly 21 and later changed, remoting now requires infinispan cache
 wildfly_disable_infinispan: false
 

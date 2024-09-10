@@ -75,7 +75,7 @@ all:
     ceServers:
       hosts:
         ce01:
-          ansible_host: 172.16.170.177
+          ansible_host: 192.168.100.80
     conServers:
       hosts:
         docker02.solitude.skyrim:

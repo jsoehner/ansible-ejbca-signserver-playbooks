@@ -121,7 +121,8 @@
         force: yes
 
   when:
-    - wildfly_version.split('.')[0]|int == 26
+ # changed to new version 26 --> 33 for wildfly
+    - wildfly_version.split('.')[0]|int == 33
     - wildfly_use_galleon|bool
 
 - name: Configure ownership on wildfly installed with Galleon

@@ -23,22 +23,28 @@ configdump_import_files: "{{ configdump_files }}"
 add_publshers_to_cas: true
 
 # EJBCA version and deployment info
-ejbca_version: 7.4.3.2
+ejbca_version: 8.3.2
+#7.4.3.2
 # If enabled Ansible controller is used as software repository for Apache Ant, EJBCA, and JDBC driver
 use_local_repository: false
-ejbca_remote_dir: ~/Downloads/PK-Software/ejbca_ee_7_4_3_2.zip
+#ejbca_remote_dir: ~/Downloads/PK-Software/ejbca_ee_7_4_3_2.zip
+ejbca_remote_dir: ~/Downloads/PK-Software/ejbca_ce_8_3_2.zip
 # EJBCA URL to download the zip release file
 #ejbca_software_url: https://sourceforge.net/projects/ejbca/files/ejbca7/ejbca_ce_7_4_3_2.zip/download
-ejbca_software_url: https://github.com/Keyfactor/ejbca-ce/archive/refs/tags/EJBCA_7_9_0_1_20220525.zip
-ejbca_src_dir_name: ejbca_ce_7_4_3_2
+ejbca_software_url: https://github.com/Keyfactor/ejbca-ce/archive/refs/tags/r8.3.2.zip
+#https://github.com/Keyfactor/ejbca-ce/archive/refs/tags/EJBCA_8_3_2_20220525.zip
+#ejbca_src_dir_name: ejbca_ce_7_4_3_2
+ejbca_src_dir_name: ejbca-ce-r8.3.2
 ejbca_type: CA
 
 # EJBCA Upgrade version
-ejbca_upgrade_version: 7.9.1
+#ejbca_upgrade_version: 7.9.1
+ejbca_upgrade_version: 8.3.2
 # EJBCA Upgrade version URL to download the zip release file
 ejbca_upgrade_software_url:
 # Directory name of EJBCA Upgrade version
-ejbca_upgrade_src_dir: ejbca_ce_7_9_1
+#ejbca_upgrade_src_dir: ejbca_ce_7_9_1
+ejbca_upgrade_src_dir: ejbca_ce_8_3_2
 
 # Variables to confgure the Widfly datasource for connecting to the applicable DB
 appsrv_datasources:
@@ -131,7 +137,7 @@ enable_ejbca_protocols:
   - name: CMP
   - name: CRLstore
   - name: OCSP
-  - name: 'Public Web'
+#  - name: 'Public Web'
   - name: SCEP
   - name: Webdist
   - name: 'Web Service'

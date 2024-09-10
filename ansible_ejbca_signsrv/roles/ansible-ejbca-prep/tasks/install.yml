@@ -73,7 +73,7 @@
         - use_local_repository|bool
       register: unpacked_local_ejbca
 
-    - name: Download and unpack EJBCA EE archive
+    - name: Download and unpack EJBCA C/EE archive
       ansible.builtin.unarchive:
         src: "{{ ejbca_software_url }}"
         dest: "{{ ejbca_root_dir }}"
